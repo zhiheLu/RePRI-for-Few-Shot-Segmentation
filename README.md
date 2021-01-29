@@ -62,7 +62,7 @@ The train/val splits are directly provided in lists/. How they were obtained is 
 ### Download pre-trained models
 
 #### Pre-trained backbones
-First, you will need to download the ImageNet pre-trained backbones at https://drive.google.com/drive/folders/1Hrz1wOxOZm4nIIS7UMJeL79AQrdvpj6v and put them under initmodel/. These will be used if you decide to train your models from scratch.
+First, you will need to download the ImageNet pre-trained backbones at https://mycuhk-my.sharepoint.com/:u:/g/personal/1155122171_link_cuhk_edu_hk/EQEY0JxITwVHisdVzusEqNUBNsf1CT8MsALdahUhaHrhlw?e=4%3a2o3XTL&at=9 and put them under initmodel/. These will be used if you decide to train your models from scratch.
 
 #### Pre-trained models
 We directly provide the full pre-trained models at https://drive.google.com/file/d/1iuMAo5cJ27oBdyDkUI0JyGIEH60Ln2zm/view?usp=sharing. You can download them and directly extract them at the root of this repo. This includes Resnet50 and Resnet101 backbones on Pascal-5i, and Resnet50 on Coco-20i.
