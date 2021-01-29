@@ -4,7 +4,7 @@ GPU=$3
 LAYERS=$4
 ARCH=$5
 CLASSES=$6
-EPOCHS=${7}
+EPOCHS=$7
 
 
 dirname="results/train/${ARCH}-${LAYERS}/${DATA}/split_${SPLIT}"
