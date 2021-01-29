@@ -72,16 +72,16 @@ We directly provide the full pre-trained models at https://drive.google.com/file
 Data are located in data/. All the code is provided in src/. Default configuration files can be found in config_files/. Training and testing scripts are located in scripts/. Lists/ contains the train/validation splits for each dataset.
 
 
-## Training (optional)
+## Training
 
 If you want to use the pre-trained models, this step is optional. Otherwise, you can train your own models from scratch with the scripts/train.sh script, as follows.
 
 ```python
-bash scripts/train.sh {data} {fold} {[gpu_ids]} {layers}
+bash scripts/train.sh {data} {fold} {[gpu_ids]} {layers} {arch: resnet or vgg} {classes: 16 for pascal, 61 for coco} {epochs: 100 for pascal, 20 for coco}
 ```
 For instance, if you want to train a Resnet50-based model on the fold-0 of Pascal-5i on GPU 1, use:
 ```python
-bash scripts/train.sh pascal 0 [1] 50
+bash scripts/train.sh pascal 0 [0, 1, 2, 3] 50 resnet 16 100
 ```
 
 Note that this code supports distributed training. If you want to train on multiple GPUs, you may simply replace [1] in the previous examples with the list of gpus_id you want to use.
