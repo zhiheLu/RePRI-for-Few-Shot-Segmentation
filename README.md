@@ -86,6 +86,32 @@ bash scripts/train.sh pascal 0 [0, 1, 2, 3] 50 resnet 16 100
 
 Note that this code supports distributed training. If you want to train on multiple GPUs, you may simply replace [1] in the previous examples with the list of gpus_id you want to use.
 
+The models we need to train and corresponding scripts are listed here:
+- Vgg-16 models for PASCAL.
+
+```python
+bash scripts/train.sh pascal 0 [0, 1, 2, 3] 16 vgg 16 100
+bash scripts/train.sh pascal 1 [0, 1, 2, 3] 16 vgg 16 100
+bash scripts/train.sh pascal 2 [0, 1, 2, 3] 16 vgg 16 100
+bash scripts/train.sh pascal 3 [0, 1, 2, 3] 16 vgg 16 100
+```
+
+- Vgg-16 models for COCO.
+```python
+bash scripts/train.sh coco 0 [0, 1, 2, 3] 16 vgg 61 20
+bash scripts/train.sh coco 1 [0, 1, 2, 3] 16 vgg 61 20
+bash scripts/train.sh coco 2 [0, 1, 2, 3] 16 vgg 61 20
+bash scripts/train.sh coco 3 [0, 1, 2, 3] 16 vgg 61 20
+```
+
+- ResNet-101 models for COCO.
+```python
+bash scripts/train.sh coco 0 [0, 1, 2, 3] 101 resnet 61 20
+bash scripts/train.sh coco 1 [0, 1, 2, 3] 101 resnet 61 20
+bash scripts/train.sh coco 2 [0, 1, 2, 3] 101 resnet 61 20
+bash scripts/train.sh coco 3 [0, 1, 2, 3] 101 resnet 61 20
+```
+
 
 ## Testing
 
