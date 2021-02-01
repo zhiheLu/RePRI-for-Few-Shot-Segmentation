@@ -4,7 +4,8 @@ GPU=$3
 LAYERS=$4
 ARCH=$5
 CLASSES=$6
-EPOCHS=$7
+CLASSESVAL=$7
+EPOCHS=$8
 
 
 dirname="results/train/${ARCH}-${LAYERS}/${DATA}/split_${SPLIT}"
@@ -14,6 +15,7 @@ python3 -m src.train --config config_files/${DATA}.yaml \
 						    layers ${LAYERS} \
 						    gpus ${GPU} \
 						    num_classes_tr ${CLASSES} \
+						    num_classes_val ${CLASSESVAL} \
 						    batch_size 12 \
 						    epochs ${EPOCHS} \
  						    visdom_port -1 \
