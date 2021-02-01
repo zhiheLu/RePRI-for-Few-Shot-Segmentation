@@ -90,26 +90,26 @@ The models we need to train and corresponding scripts are listed here:
 - Vgg-16 models for PASCAL.
 
 ```python
-bash scripts/train.sh pascal 0 [0, 1, 2, 3] 16 vgg 16 5 100
-bash scripts/train.sh pascal 1 [0, 1, 2, 3] 16 vgg 16 5 100
-bash scripts/train.sh pascal 2 [0, 1, 2, 3] 16 vgg 16 5 100
-bash scripts/train.sh pascal 3 [0, 1, 2, 3] 16 vgg 16 5 100
+bash scripts/train.sh pascal 0 [0,1,2,3] 16 vgg 16 5 100
+bash scripts/train.sh pascal 1 [0,1,2,3] 16 vgg 16 5 100
+bash scripts/train.sh pascal 2 [0,1,2,3] 16 vgg 16 5 100
+bash scripts/train.sh pascal 3 [0,1,2,3] 16 vgg 16 5 100
 ```
 
 - Vgg-16 models for COCO.
 ```python
-bash scripts/train.sh coco 0 [0, 1, 2, 3] 16 vgg 61 20 20
-bash scripts/train.sh coco 1 [0, 1, 2, 3] 16 vgg 61 20 20
-bash scripts/train.sh coco 2 [0, 1, 2, 3] 16 vgg 61 20 20
-bash scripts/train.sh coco 3 [0, 1, 2, 3] 16 vgg 61 20 20
+bash scripts/train.sh coco 0 [0,1,2,3] 16 vgg 61 20 20
+bash scripts/train.sh coco 1 [0,1,2,3] 16 vgg 61 20 20
+bash scripts/train.sh coco 2 [0,1,2,3] 16 vgg 61 20 20
+bash scripts/train.sh coco 3 [0,1,2,3] 16 vgg 61 20 20
 ```
 
 - ResNet-101 models for COCO.
 ```python
-bash scripts/train.sh coco 0 [0, 1, 2, 3] 101 resnet 61 20 20
-bash scripts/train.sh coco 1 [0, 1, 2, 3] 101 resnet 61 20 20
-bash scripts/train.sh coco 2 [0, 1, 2, 3] 101 resnet 61 20 20
-bash scripts/train.sh coco 3 [0, 1, 2, 3] 101 resnet 61 20 20
+bash scripts/train.sh coco 0 [0,1,2,3] 101 resnet 61 20 20
+bash scripts/train.sh coco 1 [0,1,2,3] 101 resnet 61 20 20
+bash scripts/train.sh coco 2 [0,1,2,3] 101 resnet 61 20 20
+bash scripts/train.sh coco 3 [0,1,2,3] 101 resnet 61 20 20
 ```
 
 
