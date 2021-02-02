@@ -118,7 +118,7 @@ def main_worker(rank: int,
                                          use_callback=False,
                                          suffix=f'train_{epoch}')
         if args.distributed:
-            dist.all_reduce(val_mIou), dist.all_reduce(val_loss)
+            # dist.all_reduce(val_mIou), dist.all_reduce(val_loss)
             val_mIou /= world_size
             val_loss /= world_size
 
