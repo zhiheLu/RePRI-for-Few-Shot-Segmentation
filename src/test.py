@@ -101,10 +101,12 @@ def episodic_validate(args: argparse.Namespace,
 
     H, W = args.image_size, args.image_size
     c = model.module.bottleneck_dim
-        if args.image_size == 417:
+    
+    if args.image_size == 417:
         h, w = 53, 53
     if args.image_size == 473:
         h, w = 60, 60
+        
     # h = model.module.feature_res[0]
     # w = model.module.feature_res[1]
 
