@@ -16,6 +16,7 @@ python3 -m src.train --config config_files/${DATA}.yaml \
 						    gpus ${GPU} \
 						    num_classes_tr ${CLASSES} \
 						    num_classes_val ${CLASSESVAL} \
+						    arch ${ARCH} \
 						    batch_size 12 \
 						    epochs ${EPOCHS} \
  						    visdom_port -1 \
